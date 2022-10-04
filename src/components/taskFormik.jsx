@@ -5,7 +5,7 @@ import * as Yup from "yup";
 // Models
 import LEVELS from "../models/levels";
 
-const FormFormik = () => {
+const TasksList = () => {
   const taskSchema = Yup.object().shape({
     name: Yup.string()
       .min(3, "Min 3 characters")
@@ -116,4 +116,4 @@ const FormFormik = () => {
   );
 };
 
-export default FormFormik;
+export default TasksList;
